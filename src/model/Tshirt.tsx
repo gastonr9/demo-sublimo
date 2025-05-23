@@ -7,31 +7,25 @@ import { Irgb } from "../types";
 
 const Tshirt = ({
   logo,
-  full,
   color,
   logoP,
   logoS,
   isMobile,
-  isFull,
   isLogo,
 }: {
   logo: string;
-  full: string;
   color: Irgb;
   logoP: number;
   logoS: number;
   isMobile: boolean;
-  isFull: boolean;
   isLogo: boolean;
 }) => {
   const { nodes, materials } = useGLTF(modelGltf) as any;
 
   const logoTex = useTexture(logo);
-  const fullTex = useTexture(full);
 
   useEffect(() => {}, [logo]);
 
-  fullTex.colorSpace = THREE.SRGBColorSpace;
   logoTex.colorSpace = THREE.SRGBColorSpace;
 
   useEffect(() => {
@@ -80,11 +74,11 @@ const Tshirt = ({
         position={[0, isMobile ? 0.35 : 0.1, 0]}
         dispose={null}
       >
-        {isFull && (
+        {/* {isFull && (
           <Decal position={[0, 0, 0]} rotation={[0, 0, 0]} scale={1}>
             <meshBasicMaterial map={fullTex} />
           </Decal>
-        )}
+        )} */}
         {isLogo && (
           <Decal
             position={[genP(), 0.08, 0.13]}

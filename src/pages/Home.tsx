@@ -9,11 +9,9 @@ const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [color, setColor] = useState({ r: 19, g: 97, b: 189 });
   const [isLogo, setIsLogo] = useState(true);
-  const [isFull, setIsFull] = useState(false);
   const [logoS, setLogoS] = useState(0);
   const [logoP, setLogoP] = useState(2);
   const [logo, setLogo] = useState("./logo.png");
-  const [full, setFull] = useState("./full.jpg");
   const [file, setFile] = useState<File | null>(null);
   const [img, setImg] = useState<string | null>(null);
 
@@ -27,9 +25,6 @@ const Home = () => {
 
   const handleLogo = () => {
     setIsLogo(!isLogo);
-  };
-  const handleFull = () => {
-    setIsFull(!isFull);
   };
 
   const handleLogoP = (ind: number) => {
@@ -62,26 +57,17 @@ const Home = () => {
           color={color}
           logo={logo}
           isLogo={isLogo}
-          full={full}
-          isFull={isFull}
           logoP={logoP}
           logoS={logoS}
         />
       </section>
-      <Tab1
-        color={color}
-        handleLogo={handleLogo}
-        handleFull={handleFull}
-        isLogo={isLogo}
-        isFull={isFull}
-      />
+      <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
       <Tab2
         changeColor={changeColor}
         color={color}
         setFile={setFile}
         img={img}
         setLogo={setLogo}
-        setFull={setFull}
       />
       <Tab3
         color={color}

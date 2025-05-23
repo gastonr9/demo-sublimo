@@ -10,18 +10,15 @@ const Tab2 = ({
   setFile,
   img,
   setLogo,
-  setFull,
 }: {
   changeColor: (rgb: Irgb) => void;
   color: Irgb;
   setFile: Dispatch<File | null>;
   img: string | null;
   setLogo: Dispatch<string>;
-  setFull: Dispatch<string>;
 }) => {
   const [tab, setTab] = useState(0);
   const [enLogo, setEnLogo] = useState(false);
-  const [enFull, setEnFull] = useState(false);
 
   const changeTab = (ind: number) => {
     if (tab === ind) setTab(0);
@@ -67,13 +64,10 @@ const Tab2 = ({
             <FilePicker
               img={img}
               setLogo={setLogo}
-              setFull={setFull}
               setFile={setFile}
               color={color}
               enLogo={enLogo}
               setEnLogo={setEnLogo}
-              enFull={enFull}
-              setEnFull={setEnFull}
             />
           )}
         </section>
