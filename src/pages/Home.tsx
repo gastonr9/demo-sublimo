@@ -50,17 +50,15 @@ const Home = () => {
   window.addEventListener("resize", checkScreen);
 
   return (
-    <main className="h-screen overflow-hidden bg-center bg-main-img">
-      <section ref={tref} className="h-full">
-        <Model
-          isMobile={isMobile}
-          color={color}
-          logo={logo}
-          isLogo={isLogo}
-          logoP={logoP}
-          logoS={logoS}
-        />
-      </section>
+    <main className="  rounded-3xl  ">
+      <Model
+        isMobile={isMobile}
+        color={color}
+        logo={logo}
+        isLogo={isLogo}
+        logoP={logoP}
+        logoS={logoS}
+      />
       <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
       <Tab2
         changeColor={changeColor}

@@ -31,7 +31,7 @@ const Tab2 = ({
         style={{
           borderColor: `rgb(74, 74, 74)`,
         }}
-        className="absolute select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center justify-around z-1 md:top-[50%] top-[77%] left-[15px] translate-y-[-50%] gap-[10px] py-[10px] px-[10px]"
+        className="relative select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center justify-around z-1 md:top-[50%] top-[77%] left-[15px] translate-y-[-50%] gap-[10px] py-[10px] px-[10px]"
       >
         <Button
           img={colors}
