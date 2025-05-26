@@ -41,10 +41,10 @@ const Model = ({
           isLogo={isLogo}
         />
         <OrbitControls
-          target={[0, isMobile ? 0.8 : 0.4, 0]}
+          target={[0, isMobile ? 0.8 : 0.0, 0]}
           maxDistance={30}
           minDistance={8}
-          maxPolarAngle={Math.PI / 1.94}
+          maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 4}
           enablePan={false}
         />

@@ -64,21 +64,16 @@ const Tshirt = ({
   };
 
   return (
-    <group scale={isMobile ? 6 : 9}>
+    <group scale={isMobile ? 6 : 8}>
       <mesh
         castShadow
         receiveShadow
         name="tshirt"
         geometry={nodes.tshirt.geometry}
         material={materials.color}
-        position={[0, isMobile ? 0.35 : 0.1, 0]}
+        position={[0, isMobile ? 0.35 : 0.22, 0]}
         dispose={null}
       >
-        {/* {isFull && (
-          <Decal position={[0, 0, 0]} rotation={[0, 0, 0]} scale={1}>
-            <meshBasicMaterial map={fullTex} />
-          </Decal>
-        )} */}
         {isLogo && (
           <Decal
             position={[genP(), 0.08, 0.13]}
@@ -86,7 +81,6 @@ const Tshirt = ({
             scale={genS()}
             map={logoTex}
             depthTest={true}
-            // depthWrite={true}
           />
         )}
       </mesh>

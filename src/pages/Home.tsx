@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Slide from "./Slide";
 
 import { Model } from "../model";
 import { Tab1, Tab2, Tab3 } from "../containers";
@@ -50,7 +51,11 @@ const Home = () => {
   window.addEventListener("resize", checkScreen);
 
   return (
-    <main className="h-screen overflow-hidden bg-center bg-main-img">
+    <main className="h-screen overflow-hidden bg-center fondo">
+      <div className="h-56">
+        <Slide />
+      </div>
+
       <section ref={tref} className="h-full">
         <Model
           isMobile={isMobile}
