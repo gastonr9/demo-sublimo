@@ -33,11 +33,11 @@ const Tab3 = ({
     }
   };
   return (
-    <section
+    <div
       style={{
         borderColor: `rgb(74, 74, 74)`,
       }}
-      className="absolute gap-1 py-5 md:py-8 select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center z-1 md:top-[50%] top-[68%] right-[15px] translate-y-[-50%] md:w-[70px] w-[60px]"
+      className="relative gap-1 py-5 md:py-8 select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center z-1 top-[68%] right-[15px] md:w-[70px] w-[60px]"
     >
       <h2
         style={{
@@ -105,7 +105,7 @@ const Tab3 = ({
         text="G"
         handleClick={handleClick}
       />
-    </section>
+    </div>
   );
 };
 

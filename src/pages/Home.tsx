@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Slide from "./Slide";
 
 import { Model } from "../model";
 import { Tab1, Tab2, Tab3 } from "../containers";
@@ -51,37 +50,43 @@ const Home = () => {
   window.addEventListener("resize", checkScreen);
 
   return (
-    <main className="h-screen overflow-hidden bg-center fondo">
-      <div className="h-56">
-        <Slide />
-      </div>
+    <div className="">
+      <div className="relative centro z-10 overflow-hidden ">
+        {/* Remera en el centro */}
+        <div className=" absolute inset-0 flex items-center w-[650px] h-[700px] justify-center z-10 place-self-center">
+          <Model
+            isMobile={isMobile}
+            color={color}
+            logo={logo}
+            isLogo={isLogo}
+            logoP={logoP}
+            logoS={logoS}
+          />
+        </div>
 
-      <section ref={tref} className="h-full">
-        <Model
-          isMobile={isMobile}
-          color={color}
-          logo={logo}
-          isLogo={isLogo}
-          logoP={logoP}
-          logoS={logoS}
-        />
-      </section>
-      <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
-      <Tab2
-        changeColor={changeColor}
-        color={color}
-        setFile={setFile}
-        img={img}
-        setLogo={setLogo}
-      />
-      <Tab3
-        color={color}
-        logoS={logoS}
-        logoP={logoP}
-        handleLogoP={handleLogoP}
-        handleLogoS={handleLogoS}
-      />
-    </main>
+        {/* Tab izquierda */}
+        <div className="absolute left-4 top-[20%] z-20">
+          <Tab2
+            changeColor={changeColor}
+            color={color}
+            setFile={setFile}
+            img={img}
+            setLogo={setLogo}
+          />
+          <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
+        </div>
+        {/* Tab derecha */}
+        <div className="absolute top-[15%] right-4 z-20">
+          <Tab3
+            color={color}
+            logoS={logoS}
+            logoP={logoP}
+            handleLogoP={handleLogoP}
+            handleLogoS={handleLogoS}
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

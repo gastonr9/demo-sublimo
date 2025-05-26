@@ -64,14 +64,14 @@ const Tshirt = ({
   };
 
   return (
-    <group scale={isMobile ? 6 : 8}>
+    <group scale={isMobile ? 6 : 4}>
       <mesh
         castShadow
         receiveShadow
         name="tshirt"
         geometry={nodes.tshirt.geometry}
         material={materials.color}
-        position={[0, isMobile ? 0.35 : 0.22, 0]}
+        position={[0, isMobile ? 0.35 : 0, 0]}
         dispose={null}
       >
         {isLogo && (

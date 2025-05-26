@@ -27,11 +27,11 @@ const Tab2 = ({
 
   return (
     <>
-      <section
+      <div
         style={{
           borderColor: `rgb(74, 74, 74)`,
         }}
-        className="absolute select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center justify-around z-1 md:top-[50%] top-[77%] left-[15px] translate-y-[-50%] gap-[10px] py-[10px] px-[10px]"
+        className="relative gap-1 py-5 md:py-8 select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center z-1 top-[68%]  md:w-[70px] w-[60px]  "
       >
         <Button
           img={colors}
@@ -47,7 +47,7 @@ const Tab2 = ({
           ind={2}
           changeTab={changeTab}
         />
-      </section>
+      </div>
       {tab != 0 && (
         <section className="w-[220px] h-[330px] absolute bg-[#111] rounded md:top-[50%] top-[65%] left-[90px] translate-y-[-50%] ">
           <div className="flex justify-end">

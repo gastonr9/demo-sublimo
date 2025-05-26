@@ -16,7 +16,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={`flex justify-center items-center md:w-[50px] w-[40px] md:h-[50px] h-[40px] rounded-full
+      className={` flex justify-center items-center md:w-[50px] w-[40px] md:h-[50px] h-[40px] rounded-full
       } ${!active && "md:hover:bg-gray-700"}`}
       style={{
         backgroundColor: active ? `rgb(74, 74, 74)` : "",
