@@ -26,7 +26,6 @@ const Home = () => {
   const changeColor = (rgb: Irgb) => setColor(rgb);
 
   return (
-<<<<<<< HEAD
     <div className="relative w-[90vw] h-[100vh] overflow-hidden place-self-center ">
       {/* Modelo centrado */}
       <div className="absolute inset-0 z-10">
@@ -62,33 +61,6 @@ const Home = () => {
         />
       </div>
     </div>
-=======
-    <main className="  rounded-3xl  ">
-      <Model
-        isMobile={isMobile}
-        color={color}
-        logo={logo}
-        isLogo={isLogo}
-        logoP={logoP}
-        logoS={logoS}
-      />
-      <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
-      <Tab2
-        changeColor={changeColor}
-        color={color}
-        setFile={setFile}
-        img={img}
-        setLogo={setLogo}
-      />
-      <Tab3
-        color={color}
-        logoS={logoS}
-        logoP={logoP}
-        handleLogoP={handleLogoP}
-        handleLogoS={handleLogoS}
-      />
-    </main>
->>>>>>> master
   );
 };
 

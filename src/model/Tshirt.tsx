@@ -69,11 +69,7 @@ const Tshirt = ({
         name="tshirt"
         geometry={nodes.tshirt.geometry}
         material={materials.color}
-<<<<<<< HEAD
         position={0}
-=======
-        position={[0, isMobile ? 0.35 : 0.2, 0]}
->>>>>>> master
         dispose={null}
       >
         {isLogo && (
