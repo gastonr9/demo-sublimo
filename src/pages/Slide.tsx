@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import f1 from "../assets/images/1-100.jpg";
 import f2 from "../assets/images/2-100.jpg";
 import f3 from "../assets/images/3-100.jpg";
@@ -15,4 +16,9 @@ const Slide = () => {
   );
 };
 
+=======
+const Slide = () => {
+  return <div className="slide">slide</div>;
+};
+>>>>>>> master
 export default Slide;
