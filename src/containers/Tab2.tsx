@@ -1,5 +1,5 @@
 import { Dispatch, useState } from "react";
-
+import gracias from "../assets/images/gracias.png";
 import { colors, file, close } from "../assets/icons";
 import { Button, ColorPicker, FilePicker } from "../components";
 import { Irgb } from "../types";
@@ -24,7 +24,7 @@ const Tab2 = ({
     if (tab === ind) setTab(0);
     else setTab(ind);
   };
-
+  const gra = gracias;
   return (
     <>
       <div
@@ -49,7 +49,7 @@ const Tab2 = ({
         />
       </div>
       {tab != 0 && (
-        <section className="w-[220px] h-[330px] absolute bg-[#111] rounded md:top-[50%] top-[65%] left-[90px] translate-y-[-50%] ">
+        <section className="w-[220px] h-[330px] absolute bg-[#aaaaaa] rounded md:top-[50%] top-[65%] left-[90px] translate-y-[-50%] ">
           <div className="flex justify-end">
             <button
               type="button"
@@ -59,6 +59,7 @@ const Tab2 = ({
               <img src={close} alt="close" className="select-none" />
             </button>
           </div>
+
           {tab === 1 && <ColorPicker color={color} changeColor={changeColor} />}
           {tab === 2 && (
             <FilePicker
@@ -70,6 +71,23 @@ const Tab2 = ({
               setEnLogo={setEnLogo}
             />
           )}
+          {tab === 3 && (
+            <FilePicker
+              img={gra}
+              setLogo={setLogo}
+              setFile={setFile}
+              color={color}
+              enLogo={enLogo}
+              setEnLogo={setEnLogo}
+            />
+          )}
+          <Button
+            img={gra}
+            active={tab === 2 ? true : false}
+            color={color}
+            ind={3}
+            changeTab={changeTab}
+          />
         </section>
       )}
     </>

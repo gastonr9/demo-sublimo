@@ -1,5 +1,3 @@
-import { fromHalfFloat } from "three/src/extras/DataUtils.js";
-import fondo from "../assets/images/fs1.png";
 import f1 from "../assets/images/1-100.jpg";
 import f2 from "../assets/images/2-100.jpg";
 import f3 from "../assets/images/3-100.jpg";

@@ -8,9 +8,9 @@ import { Irgb } from "../types";
 const Home = () => {
   const [color, setColor] = useState({ r: 19, g: 97, b: 189 });
   const [isLogo, setIsLogo] = useState(true);
-  const [logoS, setLogoS] = useState(0);
-  const [logoP, setLogoP] = useState(2);
-  const [logo, setLogo] = useState("./logo.png");
+  const [logoS, setLogoS] = useState(2);
+  const [logoP, setLogoP] = useState(1);
+  const [logo, setLogo] = useState("./icon.png");
   const [file, setFile] = useState<File | null>(null);
   const [img, setImg] = useState<string | null>(null);
 
@@ -60,11 +60,6 @@ const Home = () => {
           handleLogoS={handleLogoS}
         />
       </div>
-
-      {/* Tab inferior (opcional, si querés una más abajo) */}
-      {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
-        <OtroTabInferior />
-      </div> */}
     </div>
   );
 };

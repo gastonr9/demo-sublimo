@@ -62,7 +62,7 @@ const Tshirt = ({
   };
 
   return (
-    <group scale={5}>
+    <group scale={6}>
       <mesh
         castShadow
         receiveShadow

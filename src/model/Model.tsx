@@ -24,10 +24,11 @@ const Model = ({
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 10,
-        position: [0, 20, 25],
+        position: [0, 0, 60],
       }}
     >
-      <hemisphereLight groundColor={"#111"} intensity={0.01} />
+      <hemisphereLight groundColor={"#000000"} intensity={0.015} />
+
       <Tshirt
         logo={logo}
         color={color}
@@ -38,9 +39,9 @@ const Model = ({
       <OrbitControls
         target={0}
         maxDistance={30}
-        minDistance={10}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 4}
+        minDistance={20}
+        maxPolarAngle={Math.PI / 0}
+        minPolarAngle={Math.PI / 100}
         enablePan={false}
       />
     </Canvas>
