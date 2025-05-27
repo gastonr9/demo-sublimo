@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <div className="">
-      <div className="relative centro z-10 overflow-hidden ">
+      <div className="relative centro z-10 ">
         {/* Remera en el centro */}
         <div className=" absolute inset-0 flex items-center w-[650px] h-[700px] justify-center z-10 place-self-center">
           <Model
@@ -65,25 +65,27 @@ const Home = () => {
         </div>
 
         {/* Tab izquierda */}
-        <div className="absolute left-4 top-[20%] z-20">
-          <Tab2
-            changeColor={changeColor}
-            color={color}
-            setFile={setFile}
-            img={img}
-            setLogo={setLogo}
-          />
-          <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
-        </div>
-        {/* Tab derecha */}
-        <div className="absolute top-[15%] right-4 z-20">
-          <Tab3
-            color={color}
-            logoS={logoS}
-            logoP={logoP}
-            handleLogoP={handleLogoP}
-            handleLogoS={handleLogoS}
-          />
+        <div className="relative w-full h-full">
+          <div className="absolute left-4 top-[20%] z-20">
+            <Tab2
+              changeColor={changeColor}
+              color={color}
+              setFile={setFile}
+              img={img}
+              setLogo={setLogo}
+            />
+            <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
+          </div>
+          {/* Tab derecha */}
+          <div className="absolute top-[15%] right-4 z-20">
+            <Tab3
+              color={color}
+              logoS={logoS}
+              logoP={logoP}
+              handleLogoP={handleLogoP}
+              handleLogoS={handleLogoS}
+            />
+          </div>
         </div>
       </div>
     </div>
