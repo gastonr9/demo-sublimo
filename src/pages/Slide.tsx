@@ -10,7 +10,7 @@ const Slide = () => {
       <img src={f2} alt="" />
       <img src={f3} alt="" />
       <img src={f4} alt="" />
-      <img src={f5} alt="" />
+      {/* <img src={f5} alt="" /> */}
     </div>
   );
 };
