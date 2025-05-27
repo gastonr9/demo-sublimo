@@ -83,7 +83,7 @@ const Tab2 = ({
           )}
           <Button
             img={gra}
-            active={tab === 2 ? true : false}
+            active={tab === 3 ? true : false}
             color={color}
             ind={3}
             changeTab={changeTab}
