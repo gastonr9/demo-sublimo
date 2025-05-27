@@ -10,14 +10,12 @@ const Tshirt = ({
   color,
   logoP,
   logoS,
-  isMobile,
   isLogo,
 }: {
   logo: string;
   color: Irgb;
   logoP: number;
   logoS: number;
-  isMobile: boolean;
   isLogo: boolean;
 }) => {
   const { nodes, materials } = useGLTF(modelGltf) as any;
@@ -64,14 +62,14 @@ const Tshirt = ({
   };
 
   return (
-    <group scale={isMobile ? 6 : 4}>
+    <group scale={5}>
       <mesh
         castShadow
         receiveShadow
         name="tshirt"
         geometry={nodes.tshirt.geometry}
         material={materials.color}
-        position={[0, isMobile ? 0.35 : 0, 0]}
+        position={0}
         dispose={null}
       >
         {isLogo && (
