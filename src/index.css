@@ -1,8 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body,
+html {
+  margin: 0;
+  padding: 0;
 
+  display: flex;
+}
 .fondo {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60"><text x="0" y="25" fill="%23E6E8EE" font-size="60px">.</text></svg>')
     0px 0px / 35px 35px rgb(241, 244, 249);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  /* background-image: url("./assets/images/pages/1-100.jpg"); */
+  /* background-color: darkgrey; */
+  /* background-size: contain; */
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 10;
+}
+.div2 {
+  grid-area: 2 / 2 / 5 / 5;
+  /* background-color: yellow; */
+}
+.div3 {
+  grid-area: 2 / 6 / 5 / 9;
+}
+.blur {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(0, 100, 255, 0.5);
+  filter: blur(20px);
+  box-shadow: 0 0 20px rgba(0, 100, 255, 0.7);
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+.grande {
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* fondo de la página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.productos {
+  position: absolute;
+
+  transform: scaleX(-1) rotate(18deg) translateX(-50%) translateY(6%) scale(1.1); /* rotación y centrado vertical */
+
+  width: 100dvw;
+}
+
+.contenedor {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  width: 1920px;
+  height: 100em;
 }
