@@ -71,23 +71,6 @@ const Tab2 = ({
               setEnLogo={setEnLogo}
             />
           )}
-          {tab === 3 && (
-            <FilePicker
-              img={gra}
-              setLogo={setLogo}
-              setFile={setFile}
-              color={color}
-              enLogo={enLogo}
-              setEnLogo={setEnLogo}
-            />
-          )}
-          <Button
-            img={gra}
-            active={tab === 3 ? true : false}
-            color={color}
-            ind={3}
-            changeTab={changeTab}
-          />
         </section>
       )}
     </>

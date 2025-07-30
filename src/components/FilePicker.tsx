@@ -23,7 +23,7 @@ const FilePicker = ({
         case 1:
           if (!enLogo) setLogo(img);
           else setLogo("./logo.png");
-          setEnLogo(!enLogo);
+          setEnLogo(enLogo);
           break;
       }
     }
@@ -62,7 +62,6 @@ const FilePicker = ({
           />
         )}
       </div>
-      <div></div>
     </section>
   );
 };

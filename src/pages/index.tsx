@@ -3,7 +3,6 @@ import Slide from "./Slide";
 const Index = () => {
   return (
     <>
-      <Slide />
       <Home />
     </>
   );
