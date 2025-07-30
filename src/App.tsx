@@ -2,9 +2,6 @@ import Index from "./pages/index";
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 
-import { Route, Routes } from "react-router";
-import Home from "./pages/Home";
-
 const App = () => {
   return (
     <div className="fondo">
