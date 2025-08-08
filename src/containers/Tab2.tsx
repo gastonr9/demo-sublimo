@@ -7,24 +7,16 @@ import { Irgb } from "../types";
 const Tab2 = ({
   changeColor,
   color,
-  setFile,
-  img,
-  setLogo,
 }: {
   changeColor: (rgb: Irgb) => void;
   color: Irgb;
-  setFile: Dispatch<File | null>;
-  img: string | null;
-  setLogo: Dispatch<string>;
 }) => {
   const [tab, setTab] = useState(0);
-  const [enLogo, setEnLogo] = useState(false);
 
   const changeTab = (ind: number) => {
     if (tab === ind) setTab(0);
     else setTab(ind);
   };
-  const gra = gracias;
   return (
     <>
       <div
@@ -38,13 +30,6 @@ const Tab2 = ({
           active={tab === 1 ? true : false}
           color={color}
           ind={1}
-          changeTab={changeTab}
-        />
-        <Button
-          img={file}
-          active={tab === 2 ? true : false}
-          color={color}
-          ind={2}
           changeTab={changeTab}
         />
       </div>
@@ -61,16 +46,7 @@ const Tab2 = ({
           </div>
 
           {tab === 1 && <ColorPicker color={color} changeColor={changeColor} />}
-          {tab === 2 && (
-            <FilePicker
-              img={img}
-              setLogo={setLogo}
-              setFile={setFile}
-              color={color}
-              enLogo={enLogo}
-              setEnLogo={setEnLogo}
-            />
-          )}
+          
         </section>
       )}
     </>

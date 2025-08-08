@@ -43,23 +43,11 @@ const Home = () => {
         <Tab2
           changeColor={changeColor}
           color={color}
-          setFile={setFile}
-          img={img}
-          setLogo={setLogo}
         />
         <Tab1 color={color} handleLogo={handleLogo} isLogo={isLogo} />
       </div>
 
-      {/* Tab derecha */}
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 z-20">
-        <Tab3
-          color={color}
-          logoS={logoS}
-          logoP={logoP}
-          handleLogoP={handleLogoP}
-          handleLogoS={handleLogoS}
-        />
-      </div>
+      
     </div>
   );
 };
