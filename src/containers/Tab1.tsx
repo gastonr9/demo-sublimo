@@ -3,15 +3,7 @@ import { Button2 } from "../components";
 import { canvasDownloader } from "../helper";
 import { Irgb } from "../types";
 
-const Tab1 = ({
-  color,
-  handleLogo,
-  isLogo,
-}: {
-  color: Irgb;
-  handleLogo: () => void;
-  isLogo: boolean;
-}) => {
+const Tab1 = ({ color }: { color: Irgb }) => {
   const handleClick = (ind: number) => {
     switch (ind) {
       case 3:
@@ -27,14 +19,6 @@ const Tab1 = ({
       }}
       className="relative gap-1 py-5 md:py-8 select-none border-[2px] bg-[#000]/50 rounded-full flex flex-col items-center z-1 top-[68%]  md:w-[70px] w-[60px]  "
     >
-      {/* <Button2
-        img={logo}
-        active={isLogo}
-        color={color}
-        ind={1}
-        handleClick={handleClick}
-      /> */}
-
       <Button2
         img={save}
         active={false}

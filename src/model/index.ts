@@ -1,4 +1,4 @@
-import Model from './Model'
-import Tshirt from './Tshirt'
+import Model from "./Model";
+import Tshirt from "./Tshirt";
 
-export { Model, Tshirt }
+export { Model, Tshirt };
