@@ -6,16 +6,10 @@ import { Irgb } from "../types";
 
 const Model = ({
   color,
-  logo,
-  isLogo,
-  logoP,
-  logoS,
+
 }: {
   color: Irgb;
-  logo: string;
-  isLogo: boolean;
-  logoS: number;
-  logoP: number;
+
 }) => {
   return (
     <Canvas
@@ -30,11 +24,8 @@ const Model = ({
       <hemisphereLight groundColor={"#000000"} intensity={0.015} />
 
       <Tshirt
-        logo={logo}
         color={color}
-        logoP={logoP}
-        logoS={logoS}
-        isLogo={isLogo}
+
       />
       <OrbitControls
         target={0}

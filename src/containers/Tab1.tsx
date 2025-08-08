@@ -1,4 +1,4 @@
-import { logo, save } from "../assets/icons";
+import {  save } from "../assets/icons";
 import { Button2 } from "../components";
 import { canvasDownloader } from "../helper";
 import { Irgb } from "../types";

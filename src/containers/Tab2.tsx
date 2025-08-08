@@ -1,7 +1,6 @@
-import { Dispatch, useState } from "react";
-import gracias from "../assets/images/gracias.png";
-import { colors, file, close } from "../assets/icons";
-import { Button, ColorPicker, FilePicker } from "../components";
+import {  useState } from "react";
+import { colors, close } from "../assets/icons";
+import { Button, ColorPicker} from "../components";
 import { Irgb } from "../types";
 
 const Tab2 = ({
