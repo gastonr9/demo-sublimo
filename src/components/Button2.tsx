@@ -1,15 +1,12 @@
-import { Irgb } from "../types";
 
 const Button2 = ({
   img,
   active,
-  color,
   ind,
   handleClick,
 }: {
   img: string;
   active: boolean;
-  color: Irgb;
   ind: number;
   handleClick: (ind: number) => void;
 }) => {

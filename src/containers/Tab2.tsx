@@ -31,6 +31,8 @@ const Tab2 = ({
           ind={1}
           changeTab={changeTab}
         />
+      <button>Subir Diseño</button>
+
       </div>
       {tab != 0 && (
         <section className="w-[220px] h-[330px] absolute bg-[#aaaaaa] rounded md:top-[50%] top-[65%] left-[90px] translate-y-[-50%] ">
@@ -42,6 +44,7 @@ const Tab2 = ({
             >
               <img src={close} alt="close" className="select-none" />
             </button>
+
           </div>
 
           {tab === 1 && <ColorPicker color={color} changeColor={changeColor} />}

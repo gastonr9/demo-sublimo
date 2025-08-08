@@ -1,9 +1,8 @@
 import {  save } from "../assets/icons";
 import { Button2 } from "../components";
 import { canvasDownloader } from "../helper";
-import { Irgb } from "../types";
 
-const Tab1 = ({ color }: { color: Irgb }) => {
+const Tab1 = () => {
   const handleClick = (ind: number) => {
     switch (ind) {
       case 3:
@@ -22,7 +21,6 @@ const Tab1 = ({ color }: { color: Irgb }) => {
       <Button2
         img={save}
         active={false}
-        color={color}
         ind={3}
         handleClick={handleClick}
       />

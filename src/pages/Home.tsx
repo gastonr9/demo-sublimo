@@ -28,7 +28,7 @@ const Home = () => {
           changeColor={changeColor}
           color={color}
         />
-        <Tab1 color={color} />
+        <Tab1  />
       </div>
 
       
